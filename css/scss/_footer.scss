@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    // Posiciona o footer na parte de baixo da tela (com o conteúdo maior que 100vh, o relative vai deixar ele no final do documento HTML, enquanto que o absolute deixava no fundo da view.
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__logo {
+        max-width: 100px;
+    }
+    
+    &__txt {
+        margin: auto;
+        @include fontSize(14px);
+    }
+}
